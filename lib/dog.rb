@@ -6,11 +6,12 @@ class Dog
   def name=(new_name)
     @name = new_name
   end
-end 
-
-fido = Dog.new("Fido")
-fido.name 
-
-
-fido.instance_variable_set(:@name, "Fido")
-fido.instance_variable_get(:@name, "Fido")
+  
+  def breed
+    @breed
+  end
+  
+  def breed=(new_breed)
+    @breed = new_breed
+  end
+end
